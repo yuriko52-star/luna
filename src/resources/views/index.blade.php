@@ -9,7 +9,8 @@
   <div class="contact-form__heading">
     <h2>お問い合わせ</h2>
   </div>
-  <form action="" class="form" method="">
+  <form action="/contacts/confirm" class="form" method="post">
+    @csrf
     <div class="form__group">
       <div class="form__group-title">
         <span class="form__label--item">お名前</span>
@@ -58,7 +59,7 @@
       </div>
       <div class="form__group-content">
         <div class="form__group-item">
-          <textarea  name="textarea" placeholder="資料をいただきたいです"></textarea>
+          <textarea  name="content" placeholder="資料をいただきたいです"></textarea>
         </div>
        </div>
       </div>

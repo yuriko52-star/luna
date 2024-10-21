@@ -13,7 +13,7 @@
     width: 70%;
     text-align: center;
     margin: 0 auto;
-    
+}   
 
     
 .form__group {
@@ -22,7 +22,7 @@
     margin-bottom: 15px;
     
     }
-}
+
 
 
 
@@ -41,6 +41,14 @@
     border: 1px solid #ddd;
     border-radius: 3px;
     padding: 10px;
+    
+    appearance: none;
+}
+.form__group-item input {
+    height: 40px;
+}
+.form__group-item textarea {
+    height: 180px;
 }
 .form__error {
     color: red;
