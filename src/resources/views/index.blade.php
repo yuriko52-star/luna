@@ -18,10 +18,12 @@
       </div>
       <div class="form__group-content">
         <div class="form__group-item">
-          <input type="text" name="name" placeholder="てすとアリス">
+          <input type="text" name="name" placeholder="てすとアリス"value="{{ old('name') }}">
         </div>
         <div class="form__error">
-          <!-- 後で -->
+          @error('name')
+          {{ $message }}
+          @enderror
         </div>
       </div>
     </div>
@@ -32,10 +34,12 @@
       </div>
       <div class="form__group-content">
         <div class="form__group-item">
-          <input type="text" name="email" placeholder="test@test.com">
+          <input type="text" name="email" placeholder="test@test.com" value="{{ old('email') }}">
         </div>
         <div class="form__error">
-          <!-- 後で -->
+          @error('email')
+          {{ $message }}
+          @enderror
         </div>
       </div>
     </div>
@@ -46,10 +50,12 @@
       </div>
       <div class="form__group-content">
         <div class="form__group-item">
-          <input type="text" name="tel" placeholder="09012345678">
+          <input type="text" name="tel" placeholder="09012345678" value="{{ old('tel')}}">
         </div>
         <div class="form__error">
-          <!-- 後で -->
+          @error('tel')
+          {{ $message}}
+          @enderror
         </div>
       </div>
     </div>

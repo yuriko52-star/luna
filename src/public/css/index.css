@@ -51,7 +51,9 @@
     height: 180px;
 }
 .form__error {
-    color: red;
+    color: #ff0000;
+    text-align: left;
+    height: px;
 }
 .form__button {
     margin-top: 30px;
